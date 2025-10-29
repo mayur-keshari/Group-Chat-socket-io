@@ -1,5 +1,5 @@
 import {io} from 'socket.io-client' 
 
 export function connectWS(){
-    return io('http://localhost:2700');
+    return io(import.meta.env.VITE_BACKEND_URL);
 }
